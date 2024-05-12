@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-	--primary-color: #c7a17a;
-	--background-color: #f9f5f0;
-	--dark-color: #151515;
+	--primary-color: #00acee;
+	--background-color: #000000;
+	--dark-color: #000000;
 }
 
 html {
@@ -52,15 +52,18 @@ html {
 }
 
 .customer-support i {
+	color: #00acee;
 	font-size: 3.3rem;
 }
 
 .content-customer-support {
+	color: #ffffff;
 	display: flex;
 	flex-direction: column;
 }
 
 .container-logo {
+	color: #00acee;
 	display: flex;
 	align-items: center;
 	gap: 0.5rem;
@@ -72,7 +75,7 @@ html {
 
 .container-logo h1 a {
 	text-decoration: none;
-	color: #000;
+	color: #ffffff;
 	font-size: 3rem;
 	text-transform: uppercase;
 	letter-spacing: -1px;
@@ -202,11 +205,12 @@ html {
 /*               BANNER               */
 /* ********************************** */
 .banner {
-	background-image: linear-gradient(100deg, #000000, #00000020),
-		url('img/banner.jpg');
+	background-image: linear-gradient(100deg, #252424, #211c1c20),
+		url('img/Galeria2.jpg');
 	height: 60rem;
 	background-size: cover;
 	background-position: center;
+	
 }
 
 .content-banner {
@@ -261,16 +265,17 @@ html {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 1.5rem;
+	gap: 2.5rem;
 
 	background-color: #fff;
-	border-radius: 1rem;
-	padding: 1.5rem 0;
+	border-radius: 1.5rem;
+	padding: 2.5rem 0;
 }
 
 .card-feature i {
-	font-size: 2.7rem;
+	font-size: 4rem;
 	color: var(--primary-color);
+	margin-left: 3.5%;
 }
 
 .feature-content {
@@ -422,13 +427,18 @@ html {
 }
 
 .container-img {
+	
 	position: relative;
+	width: 400px;
+	height: 400px;
 }
 
 .container-img img {
-	width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
-
 .container-img .discount {
 	position: absolute;
 	left: 0;
