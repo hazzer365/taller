@@ -255,10 +255,12 @@ html {
 /*              FEATURES              */
 /* ********************************** */
 .container-features {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	gap: 3rem;
-	padding: 3rem 0;
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 1.5rem;
+    padding: 3rem 0;
+    width: 100%; /* Porcentaje del ancho del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
 }
 
 .card-feature {
@@ -268,12 +270,14 @@ html {
 	gap: 2.5rem;
 
 	background-color: #fff;
-	border-radius: 1.5rem;
-	padding: 2.5rem 0;
+	border-radius: 1.7rem;
+	padding: 1rem 0;
+	width: calc(100% - -0.5rem); /* Ancho de cada cuadro */
+    max-width: 400px; /* Ancho máximo para cada cuadro */
 }
 
 .card-feature i {
-	font-size: 4rem;
+	font-size: 4.5rem;
 	color: var(--primary-color);
 	margin-left: 3.5%;
 }
@@ -281,16 +285,17 @@ html {
 .feature-content {
 	display: flex;
 	flex-direction: column;
-	gap: 0.5rem;
+	gap: 1.5rem;
 }
 
 .feature-content span {
 	font-weight: 700;
-	font-size: 1.2rem;
+	font-size: 1.7rem;
 	color: var(--dark-color);
 }
 
 .feature-content p {
+	font-size: 1.6rem;
 	color: #777;
 	font-weight: 500;
 }
@@ -332,7 +337,7 @@ html {
 
 .category-capuchino {
 	background-image: linear-gradient(#00000080, #00000080),
-		url('img/capuchino-category.jpg');
+		url('img/Galeria3.PNG');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -344,6 +349,27 @@ html {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+}
+.category-maquina{
+	background-image: linear-gradient(#00000080, #00000080),
+		url('img/Galeria2.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.category-fabricacion{
+	background-image: linear-gradient(#00000080, #00000080),
+	url('img/Galeria2.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+.category-cambio{
+	background-image: linear-gradient(#00000080, #00000080),
+	url('img/valvulas.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
 }
 
 .card-category p {
