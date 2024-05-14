@@ -737,33 +737,40 @@ html {
 }
 
 .container-footer {
-	display: flex;
-	flex-direction: column;
-	gap: 4rem;
-	padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 2rem;
 }
 
 .menu-footer {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr) 30rem;
-	gap: 3rem;
-	justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    justify-items: center;
 }
 
+.menu-footer {
+    gap: 18rem; /* Reducido para que no se superpongan los elementos */
+}
+
+
 .title-footer {
-	font-weight: 600;
-	font-size: 1.6rem;
-	text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-transform: uppercase;
 }
 
 .contact-info,
-.information,
-.my-account,
 .newsletter {
-	display: flex;
-	flex-direction: column;
-	gap: 2rem;
+    flex: 1; /* Igualar el ancho */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
+
+
+
+
 
 .contact-info ul,
 .information ul,
@@ -773,26 +780,15 @@ html {
 	gap: 1rem;
 }
 
-.contact-info ul li,
-.information ul li,
-.my-account ul li {
+.contact-info ul li
+ {
 	list-style: none;
 	color: #fff;
 	font-size: 1.4rem;
 	font-weight: 300;
 }
 
-.information ul li a,
-.my-account ul li a {
-	text-decoration: none;
-	color: #fff;
-	font-weight: 300;
-}
 
-.information ul li a:hover,
-.my-account ul li a:hover {
-	color: var(--dark-color);
-}
 
 .social-icons {
 	display: flex;
@@ -984,7 +980,7 @@ html {
 
 	.container-blogs {
 		overflow: hidden;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 2fr 1fr;
 
 		height: 52rem;
 	}
@@ -992,7 +988,7 @@ html {
 	.menu-footer {
 		grid-template-columns: repeat(2, 1fr);
 	}
-
+	
 	.copyright {
 		flex-direction: column;
 		justify-content: center;
@@ -1093,6 +1089,7 @@ html {
 
 	.contact-info {
 		align-items: center;
+		
 	}
 
 	.menu-footer{
