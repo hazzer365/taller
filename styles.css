@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-	--primary-color: #c7a17a;
-	--background-color: #f9f5f0;
-	--dark-color: #151515;
+	--primary-color: #00acee;
+	--background-color: #000000;
+	--dark-color: #000000;
 }
 
 html {
@@ -52,15 +52,18 @@ html {
 }
 
 .customer-support i {
+	color: #00acee;
 	font-size: 3.3rem;
 }
 
 .content-customer-support {
+	color: #ffffff;
 	display: flex;
 	flex-direction: column;
 }
 
 .container-logo {
+	color: #00acee;
 	display: flex;
 	align-items: center;
 	gap: 0.5rem;
@@ -72,7 +75,7 @@ html {
 
 .container-logo h1 a {
 	text-decoration: none;
-	color: #000;
+	color: #ffffff;
 	font-size: 3rem;
 	text-transform: uppercase;
 	letter-spacing: -1px;
@@ -202,11 +205,12 @@ html {
 /*               BANNER               */
 /* ********************************** */
 .banner {
-	background-image: linear-gradient(100deg, #000000, #00000020),
-		url('img/banner.jpg');
+	background-image: linear-gradient(100deg, #252424, #211c1c20),
+		url('img/Galeria2.jpg');
 	height: 60rem;
 	background-size: cover;
 	background-position: center;
+	
 }
 
 .content-banner {
@@ -261,16 +265,17 @@ html {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 1.5rem;
+	gap: 2.5rem;
 
 	background-color: #fff;
-	border-radius: 1rem;
-	padding: 1.5rem 0;
+	border-radius: 1.5rem;
+	padding: 2.5rem 0;
 }
 
 .card-feature i {
-	font-size: 2.7rem;
+	font-size: 4rem;
 	color: var(--primary-color);
+	margin-left: 3.5%;
 }
 
 .feature-content {
@@ -327,7 +332,7 @@ html {
 
 .category-capuchino {
 	background-image: linear-gradient(#00000080, #00000080),
-		url('img/capuchino-category.jpg');
+		url('img/Galeria3.PNG');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -336,6 +341,27 @@ html {
 .category-expreso {
 	background-image: linear-gradient(#00000080, #00000080),
 		url('img/expreso-category.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.category-maquina {
+	background-image: linear-gradient(#00000080, #00000080),
+		url('img/maquinap.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.category-fabricacion {
+	background-image: linear-gradient(#00000080, #00000080),
+		url('img/mangueras.webp');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.category-cambio {
+	background-image: linear-gradient(#00000080, #00000080),
+		url('img/cambio.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -422,13 +448,18 @@ html {
 }
 
 .container-img {
+	
 	position: relative;
+	width: 400px;
+	height: 400px;
 }
 
 .container-img img {
-	width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
-
 .container-img .discount {
 	position: absolute;
 	left: 0;
@@ -706,33 +737,40 @@ html {
 }
 
 .container-footer {
-	display: flex;
-	flex-direction: column;
-	gap: 4rem;
-	padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 2rem;
 }
 
 .menu-footer {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr) 30rem;
-	gap: 3rem;
-	justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    justify-items: center;
 }
 
+.menu-footer {
+    gap: 18rem; /* Reducido para que no se superpongan los elementos */
+}
+
+
 .title-footer {
-	font-weight: 600;
-	font-size: 1.6rem;
-	text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-transform: uppercase;
 }
 
 .contact-info,
-.information,
-.my-account,
 .newsletter {
-	display: flex;
-	flex-direction: column;
-	gap: 2rem;
+    flex: 1; /* Igualar el ancho */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
+
+
+
+
 
 .contact-info ul,
 .information ul,
@@ -742,26 +780,15 @@ html {
 	gap: 1rem;
 }
 
-.contact-info ul li,
-.information ul li,
-.my-account ul li {
+.contact-info ul li
+ {
 	list-style: none;
 	color: #fff;
 	font-size: 1.4rem;
 	font-weight: 300;
 }
 
-.information ul li a,
-.my-account ul li a {
-	text-decoration: none;
-	color: #fff;
-	font-weight: 300;
-}
 
-.information ul li a:hover,
-.my-account ul li a:hover {
-	color: var(--dark-color);
-}
 
 .social-icons {
 	display: flex;
@@ -953,7 +980,7 @@ html {
 
 	.container-blogs {
 		overflow: hidden;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 2fr 1fr;
 
 		height: 52rem;
 	}
@@ -961,7 +988,7 @@ html {
 	.menu-footer {
 		grid-template-columns: repeat(2, 1fr);
 	}
-
+	
 	.copyright {
 		flex-direction: column;
 		justify-content: center;
@@ -1062,6 +1089,7 @@ html {
 
 	.contact-info {
 		align-items: center;
+		
 	}
 
 	.menu-footer{
